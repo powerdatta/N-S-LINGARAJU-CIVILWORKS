@@ -4,11 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N S LINGARAJU CIVILWORKS</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 60px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        .services, .about {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: auto;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #003399;
+        }
+        .rating {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .rating label {
+            margin-right: 10px;
+        }
+        .rating input {
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="N S LINGARAJU CIVILWORKS Logo">
+        <img src="logo.png" alt="N S LINGARAJU CIVILWORKS Logo">
         <h1>N S LINGARAJU CIVILWORKS</h1>
         <p>Excellence in Civil Works Construction</p>
     </header>
@@ -29,42 +122,143 @@
     </footer>
 </body>
 </html>
-"""
 
-style_css = """body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color: #0044cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-nav a:hover {
-    background-color: #575757;
-}
-.content {
-    padding: 20px;
-}
-footer {
-    background-color: #0044cc;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+<!-- SERVICES PAGE (services.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - N S LINGARAJU CIVILWORKS</title>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content services">
+        <div class="service">
+            <img src="service1.jpg" alt="Waterproofing">
+            <h3>Waterproofing</h3>
+            <p>Expert waterproofing solutions to protect your structures from water damage and ensure long-lasting durability.</p>
+            <ul>
+                <li>Sheet Membrane Waterproofing</li>
+                <li>Crack Filling</li>
+                <li>Liquid-Applied Membrane Waterproofing</li>
+                <li>Cementitious Waterproofing</li>
+                <li>Integral Waterproofing</li>
+                <li>Sealant Waterproofing</li>
+            </ul>
+        </div>
+        <div class="service">
+            <img src="service2.jpg" alt="Residential Construction">
+            <h3>Residential Construction</h3>
+            <p>We build modern, durable, and aesthetically pleasing homes tailored to your needs.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 N S LINGARAJU CIVILWORKS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- ABOUT PAGE (about.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - N S LINGARAJU CIVILWORKS</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content about">
+        <section>
+            <h2>Our Company</h2>
+            <p>N S LINGARAJU CIVILWORKS is a premier civil works construction company specializing in waterproofing, residential construction, and innovative infrastructure solutions. With a commitment to quality and customer satisfaction, we bring your vision to life.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>To provide top-notch construction services that exceed expectations through skilled craftsmanship, innovative techniques, and a dedication to excellence.</p>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: info@nscivilworks.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 N S LINGARAJU CIVILWORKS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- CONTACT PAGE (contact.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - N S LINGARAJU CIVILWORKS</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <section>
+            <h2>We'd love to hear from you</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section class="rating">
+            <h2>Rate Our Services</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="rating">Your Rating:</label>
+                <input type="radio" id="1-star" name="rating" value="1"> 1
+                <input type="radio" id="2-stars" name="rating" value="2"> 2
+                <input type="radio" id="3-stars" name="rating" value="3"> 3
+                <input type="radio" id="4-stars" name="rating" value="4"> 4
+                <input type="radio" id="5-stars" name="rating" value="5"> 5
+                <button type="submit">Submit Rating</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 N S LINGARAJU CIVILWORKS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+import os
+import shutil
+
+# Define the folder structure
+project_folder = "/mnt/data/project-folder"
+css_folder = os.path.join(project_folder, "css")
+images_folder = os.path.join(project_folder, "images")
+
+# Create folders
+os.makedirs(css_folder, exist_ok=True)
+os.makedirs(images_folder, exist_ok=True)
+
+# Define the file content
+index_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N S LINGARAJU CIVILWORKS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="N S LINGARAJU CIVILWORKS Logo">
+        <h1>N S LINGARAJU CIVILWORKS</h1>
+        <p>Excellence in Civil Works Construction</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content" id="home">
+        <section>
+            <h2>Welcome to N S LINGARAJU CIVILWORKS</h2>
+            <p>Your trusted partner for high-quality construction and civil engineering projects. Explore our services and learn more about how we deliver excellence in every project.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 N S LINGARAJU CIVILWORKS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+"""
+
+style_css = """body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #575757;
+}
+.content {
+    padding: 20px;
+}
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
